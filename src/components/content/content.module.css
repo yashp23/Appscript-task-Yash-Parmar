@@ -1,0 +1,134 @@
+/* General / Larger Screen Styles */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.heroSection {
+  margin: 150px auto;
+  text-align: center;
+}
+
+.heroSection h1 {
+  font-size: 60px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.heroSection p {
+  font-size: 22px;
+  color: black;
+  font-weight: 350;
+  margin: 0 auto;
+  width: 61%;
+}
+
+.itemsSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 4% 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.itemsInfo {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  gap: 12px;
+}
+
+.recommendationsDropdown {
+  padding: 5px;
+  border: none;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filterLink {
+  margin-left: 20px;
+  color: #888;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.filterLink:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .heroSection h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .heroSection p {
+    font-size: 18px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .itemsSection {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .itemsInfo {
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .recommendationsDropdown {
+    font-size: 14px;
+  }
+
+  .filterLink {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 468px) {
+  .heroSection h1 {
+    font-size: 28px;
+  }
+
+  .heroSection p {
+    font-size: 16px;
+  }
+
+  .itemsSection {
+    flex-direction: column;
+    padding: 5% 0;
+  }
+
+  .itemsInfo {
+    font-size: 12px;
+  }
+
+  .recommendationsDropdown {
+    font-size: 12px;
+  }
+
+  .filterLink {
+    font-size: 10px;
+  }
+}
